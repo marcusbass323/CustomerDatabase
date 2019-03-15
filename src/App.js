@@ -157,9 +157,11 @@ class App extends Component {
 
     return (
       <div className="AppContainer">
-        <div>
+        <div>         
+          <div className="CustomerDatabaseHeader">
+          <h1>Customer Database</h1>
+          </div>
           <div className="Header">
-        <h1>Customer Database</h1>
         <Button className="my-3" color="primary" onClick={this.toggleNewCustomerModal.bind(this)}>Add New Customer</Button>
         </div>
       </div>
