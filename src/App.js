@@ -307,7 +307,7 @@ class App extends Component {
 
             <FormGroup>      
               <Label for="created_at">Created On</Label>
-              <Input id="created_at" value={this.state.editCustomerData.creacted_at} onChange={(e) => {
+              <Input id="created_at" value={this.state.editCustomerData.created_at} onChange={(e) => {
                 let { editCustomerData } = this.state;
                 editCustomerData.created_at = e.target.value;
                 this.setState({ editCustomerData });
@@ -352,7 +352,7 @@ class App extends Component {
         <ReactToExcel
           className="ExportButton"
           table="CustomersTable"
-          filename="excelFile"
+          filename="CustomerDatabase"
           sheet="sheet 1"
           buttonText="Export to Excel"
           />
